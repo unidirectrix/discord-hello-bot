@@ -7,5 +7,6 @@ const HELLO_COMMAND = {
     description: 'Greets hello to you',
 };
 
+let command_arr = [HELLO_COMMAND]
 
-InstallGlobalCommands(process.env.APP_ID, HELLO_COMMAND);
+InstallGlobalCommands(process.env.APP_ID, command_arr);

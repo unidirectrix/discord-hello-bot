@@ -24,7 +24,7 @@ export async function DiscordRequest(endpoint, options) {
     if (!res.ok) {
         const data = await res.json();
         console.log(res.status);
-        throw new Errors(JSON.stringify(data));
+        throw new Error(JSON.stringify(data));
     }
 
     // return original response
@@ -38,7 +38,7 @@ export async function InstallGlobalCommands(appId, commands) {
 
     // bulk overwrite endpoint: https://discord.com/developers/docs/interactions/application-commands#bulk-overwrite-global-application-commands
     try {
-        await DiscordRequest(endpoint, {method: 'PUT', body: commands });
+        await DiscordRequest(endpoint, { method: 'PUT', body: commands });
     } catch (err) {
         console.error(err);
     }
