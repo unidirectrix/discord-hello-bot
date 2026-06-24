@@ -1,0 +1,25 @@
+{
+  "name": "discord-hello-bot",
+  "version": "1.0.0",
+  "description": "Basic Discord bot that greets hello using slash command",
+  "homepage": "https://github.com/unidirectrix/discord-hello-bot#readme",
+  "bugs": {
+    "url": "https://github.com/unidirectrix/discord-hello-bot/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unidirectrix/discord-hello-bot.git"
+  },
+  "license": "MIT",
+  "author": "Michaesten Bitancur",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "discord-interactions": "^4.4.0",
+    "dotenv": "^16.6.1",
+    "express": "^4.22.2"
+  }
+}
